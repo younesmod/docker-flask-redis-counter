@@ -8,10 +8,16 @@ services:
       REDIS_HOST: redis-cache
     depends_on:
       - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3
     restart: unless-stopped
 
   redis:
-    image: redis:7-alpine
+    image: ghcr.io/younesmod/redis:7-alpine
     container_name: redis-cache
     ports:
       - "6379:6379"
