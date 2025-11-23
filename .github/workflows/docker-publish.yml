@@ -1,0 +1,34 @@
+name: Build and Push Docker Images
+
+on:
+  workflow_dispatch:
+  ## if you want to do it automatically
+  # push:
+  #   branches: [ "main" ]
+
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+
+    permissions:
+      packages: write
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build Flask image
+        run: |
+          docker build -t ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:${{ github.sha }} ./app
+
+      - name: Push Flask image
+        run: |
+          docker push ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:${{ github.sha }}
