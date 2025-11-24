@@ -1,4 +1,4 @@
-![Docker Image](https://img.shields.io/badge/GHCR-Redis-blue?logo=docker)
+![Docker Image](https://img.shields.io/badge/GHCR-Flask+Redis-blue?logo=docker)
 [![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/younesmod/docker-flask-redis-counter/blob/main/LICENSE)
 [![Scan Docker Image](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/scan.yml/badge.svg)](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/scan.yml)
 [![Build and Push Docker Images](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/docker-publish.yml)

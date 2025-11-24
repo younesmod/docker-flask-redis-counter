@@ -17,4 +17,4 @@ jobs:
       - name: Scan Flask Image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: "ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:${{ github.sha }}"
+          image-ref: "ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:latest"

@@ -27,8 +27,8 @@ jobs:
 
       - name: Build Flask image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:${{ github.sha }} ./app
+          docker build -t ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:latest ./app
 
       - name: Push Flask image
         run: |
-          docker push ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:${{ github.sha }}
+          docker push ghcr.io/${{ github.repository_owner }}/docker-flask-redis-counter:latest
