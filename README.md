@@ -1,3 +1,7 @@
+![Docker Image](https://img.shields.io/badge/GHCR-Redis-blue?logo=docker)
+[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/younesmod/docker-flask-redis-counter/blob/main/LICENSE)
+[![Scan Docker Image](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/scan.yml/badge.svg)](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/scan.yml)
+[![Build and Push Docker Images](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/younesmod/docker-flask-redis-counter/actions/workflows/docker-publish.yml)
 # 🐳 Flask + Redis Counter (Docker Compose)
 
 A lightweight, containerized Flask application that tracks page visits using Redis.  
@@ -16,7 +20,7 @@ Built with production-style Docker best practices and ready for DevOps workflows
 - **Internal DNS service discovery** (`redis` hostname)  
 - Clear structure for CI/CD pipelines
 
-## 🐳 Docker Compose Setup
+## 🧩 Docker Compose Setup
 1. **Clone the repo**
 
 ```bash
