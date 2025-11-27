@@ -1,6 +1,7 @@
 services:
   web:
-    build: ./app/.
+    # build: ./app/.
+    image: docker pull ghcr.io/younesmod/docker-flask-redis-counter:latest
     container_name: flask-app
     ports:
       - "5000:5000"
