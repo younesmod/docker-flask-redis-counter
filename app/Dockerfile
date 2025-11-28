@@ -9,7 +9,7 @@ LABEL maintainer="Younes Modaresian <modaresian.younes@gmail.com> (https://githu
     org.opencontainers.image.title="dockerized-static-website" \ 
     org.opencontainers.image.description="A simple nginx-based/dockerized project" \ 
     org.opencontainers.image.vendor="Younes Modaresian"
-#\ org.opencontainers.image.licenses="MIT"
+    org.opencontainers.image.licenses="MIT"
 
 # Set Working Directory
 WORKDIR /app
